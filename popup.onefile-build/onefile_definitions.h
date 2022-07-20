@@ -1,2 +1,0 @@
-#define _NUITKA_ONEFILE_TEMP 1
-#define _NUITKA_ONEFILE_TEMP_SPEC "%TEMP%\\onefile_%PID%_%TIME%"
