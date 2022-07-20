@@ -2,6 +2,6 @@ popup_pyqt5.build/*
 popup_pyqt5.dist/*
 popup_pyqt5.onefile-build/*
 
-popup_build/*
+popup.build/*
 popup.dist/*
 popup.onefile-build/*
