@@ -1,0 +1,55 @@
+[2022-07-20T08:32:36.049269 4884 ] === CCACHE 4.3 STARTED =========================================
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) absolute_paths_in_stderr = false
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) base_dir = 
+[2022-07-20T08:32:36.049269 4884 ] Config: (environment) cache_dir = C:\Users\romja\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) compiler = 
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) compiler_check = mtime
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) compiler_type = auto
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) compression = true
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) compression_level = 0
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) cpp_extension = 
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) debug = false
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) debug_dir = 
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) depend_mode = false
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) direct_mode = true
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) disable = false
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) extra_files_to_hash = 
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) file_clone = false
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) hard_link = false
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) hash_dir = true
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) ignore_headers_in_manifest = 
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) ignore_options = 
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) inode_cache = false
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) keep_comments_cpp = false
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) limit_multiple = 0.8
+[2022-07-20T08:32:36.049269 4884 ] Config: (environment) log_file = I:\Programming\usb\popup_pyqt5.onefile-build\ccache-7112.txt
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) max_files = 0
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) max_size = 5.0G
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) path = 
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) pch_external_checksum = false
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) prefix_command = 
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) prefix_command_cpp = 
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) read_only = false
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) read_only_direct = false
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) recache = false
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) run_second_cpp = true
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) sloppiness = 
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) stats = true
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) temporary_dir = C:\Users\romja\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2022-07-20T08:32:36.049269 4884 ] Config: (default) umask = 
+[2022-07-20T08:32:36.049537 4884 ] Command line: C:\Users\romja\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\ccache.exe C:\Users\romja\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\gcc.exe -o static_src\OnefileBootstrap.o -c -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -O3 -D_WIN32_WINNT=0x0501 -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -I. -IC:\PYTHON~1\lib\SITE-P~1\nuitka\build\include -IC:\PYTHON~1\lib\SITE-P~1\nuitka\build\static_src -IC:\PYTHON~1\lib\SITE-P~1\nuitka\build\inline_copy\zstd static_src\OnefileBootstrap.c
+[2022-07-20T08:32:36.071652 4884 ] Hostname: unknown
+[2022-07-20T08:32:36.071677 4884 ] Working directory: I:/Programming/usb/popup_pyqt5.onefile-build
+[2022-07-20T08:32:36.071690 4884 ] Compiler type: gcc
+[2022-07-20T08:32:36.072009 4884 ] Source file: static_src\OnefileBootstrap.c
+[2022-07-20T08:32:36.072022 4884 ] Object file: static_src\OnefileBootstrap.o
+[2022-07-20T08:32:36.072164 4884 ] Trying direct lookup
+[2022-07-20T08:32:36.072370 4884 ] Looking for result name in C:\Users\romja\AppData\Local\Nuitka\Nuitka\Cache\ccache/5/1/fdt1us0fkkvgg8eoo9aek2p0p3qn2mqM
+[2022-07-20T08:32:36.098144 4884 ] Got result name from manifest
+[2022-07-20T08:32:36.098222 4884 ] Reading result C:\Users\romja\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/c/76gi76trnn1g5bpb08aj2ve6lgjoabqR
+[2022-07-20T08:32:36.098672 4884 ] Reading embedded entry #0 .o (13412 bytes)
+[2022-07-20T08:32:36.098699 4884 ] Writing to static_src\OnefileBootstrap.o
+[2022-07-20T08:32:36.099077 4884 ] Succeeded getting cached result
+[2022-07-20T08:32:36.099107 4884 ] Result: cache hit (direct)
+[2022-07-20T08:32:36.099296 4884 ] Acquired lock C:\Users\romja\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/c/stats.lock
+[2022-07-20T08:32:36.100762 4884 ] Releasing lock C:\Users\romja\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/c/stats.lock

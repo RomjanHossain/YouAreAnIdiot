@@ -1,7 +1,7 @@
 AS=as
 CC="C:\Users\romja\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\ccache.exe" "C:\Users\romja\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\gcc.exe"
 CCACHE_DIR=C:\Users\romja\AppData\Local\Nuitka\Nuitka\Cache\ccache
-CCACHE_LOGFILE=I:\Programming\usb\popup.onefile-build\ccache-2548.txt
+CCACHE_LOGFILE=I:\Programming\usb\popup.onefile-build\ccache-10524.txt
 CCCOM=$CC -o $TARGET -c $CFLAGS $CCFLAGS $_CCCOMCOM $SOURCES
 CFILESUFFIX=.c
 CPPDEFINES=['_WIN32_WINNT=0x0501', '_NUITKA_WINMAIN_ENTRY_POINT', '__NUITKA_NO_ASSERT__']
