@@ -1,8 +1,11 @@
 package main
 
 import (
+	"bytes"
+	"embed"
 	"fmt"
 	"image/color"
+	"io/fs"
 	"log"
 	"math/rand"
 	"os"
@@ -17,11 +20,15 @@ import (
 	"golang.org/x/image/font/opentype"
 )
 
+//go:embed sound.wav Roboto.ttf
+var _fs embed.FS
+
 const (
 	screenW       = 300
 	screenH       = 300
 	flashInterval = 300 * time.Millisecond // flash screen (black/white) speed
 	audioFilename = "sound.wav"
+	fontFileName  = "Roboto.ttf"
 )
 
 type Game struct {
@@ -114,6 +121,16 @@ func (g *Game) Layout(outsideWidth, outsideHeight int) (int, int) {
 
 func main() {
 	if len(os.Args) > 1 && os.Args[1] == "--child" {
+		// let's embed the assets
+		audioData, err := fs.ReadFile(_fs, audioFilename)
+		if err != nil {
+			log.Fatal("Failed to read embedded audio:", err)
+		}
+
+		fontData, err := fs.ReadFile(_fs, fontFileName)
+		if err != nil {
+			log.Fatal("Failed to read embedded font:", err)
+		}
 		// random window placement
 		rand.Seed(time.Now().UnixNano())
 		// get monitor size
@@ -133,13 +150,14 @@ func main() {
 		audioContext := audio.NewContext(44100) // Standard sample rate
 
 		// Load the audio file
-		f, err := os.Open(audioFilename)
-		if err != nil {
-			log.Fatal("Failed to open audio file:", err)
-		}
-		defer f.Close()
 
-		stream, err := wav.DecodeWithSampleRate(44100, f)
+		// f, err := os.Open(audioFilename)
+		// if err != nil {
+		// 	log.Fatal("Failed to open audio file:", err)
+		// }
+		// defer f.Close()
+		// stream, err := wav.DecodeWithSampleRate(44100, f)
+		stream, err := wav.DecodeWithSampleRate(44100, bytes.NewReader(audioData))
 		if err != nil {
 			log.Fatal("Failed to decode WAV file:", err)
 		}
@@ -149,7 +167,7 @@ func main() {
 			log.Fatal("Failed to create audio player:", err)
 		}
 		// load the font
-		fontData, err := os.ReadFile("Roboto.ttf")
+		// fontData, err := os.ReadFile(fontFileName)
 		if err != nil {
 			log.Fatal("Error reading font file")
 		}
