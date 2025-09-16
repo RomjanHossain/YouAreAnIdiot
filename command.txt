@@ -1,2 +1,0 @@
- py -m nuitka --mingw64 popup.py --standalone --onefile --linux-onefile-icon=w.png
- python -m nuitka --mingw64 popup.py --standalone --onefile --enable-plugin=tk-inter --windows-disable-console
